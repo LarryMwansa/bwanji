@@ -174,21 +174,31 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: 800;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1.1;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.7em;
   line-height: 1.1;
+  font-weight: 00;
 }
 
 h4 {
   font-size: 1.3em;
   line-height: 1.2;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.1em;
+  line-height: 1.2;
+  font-weight: 300;
 }
 
 p {
@@ -423,28 +433,38 @@ section {
 
 .product-cards {
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
 }
 
-.subscriptions-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0;
+.product-heading {
+  color: var(--clr-primary-2);
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.product-sub-heading {
+  color: var(--clr-primary-2);
+  padding-bottom: 30px;
 }
 
 .item__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fafafa;
+  border:solid 1px var(--clr-primary-2);
   padding: 5px;
+  padding-bottom: 30px;
   max-width: 400px;
   height: auto;
-  margin-top: 30px;
   border-radius: 10px;
+  color: var(--clr-primary-2);
+}
+
+.item__card:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 .item__card img {
-  width: 100%;
+  width: 90%;
   margin: 10px auto;
   border-radius: 10px;
 }
@@ -454,26 +474,18 @@ section {
   margin: 10px;
 }
 
+.item__list {
+
+  padding-bottom: 20px;
+}
+
 .item__price {
-  color: grey;
   font-size: 22px;
+  font-weight: 400;
+
 }
 
-.item__card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
 
-.item__card button:hover {
-  opacity: 0.7;
-}
 
 @media screen and (max-width: 1200px) {
   .products-wrapper {
@@ -496,17 +508,39 @@ section {
 
 /* Prices List Tabs Page Styling Here: */
 
-/* Create three columns of equal width */
+.subscriptions-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+
+
+.price-heading {
+  color: var(--clr-primary-2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.price-sub-heading {
+  color: var(--clr-primary-2);
+  padding-bottom: 20px;
+}
+
 .columns {
   flex: 1;
-  background-color: var(--clr-primary-2);
-  margin: 5px;
+  min-width: 300px;
+  color: var(--clr-primary-2);
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 2ch;
 }
 
 /* Style the list */
 .price {
   list-style-type: none;
-  border: 1px solid var(--clr-accent-primary);
+  border: 1px solid var(--clr-primary-2);
+  border-radius: 10px;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -519,34 +553,43 @@ section {
 }
 
 /* Pricing header */
-.price .header {
-  background-color: var(--clr-secondary-2);
-  color: white;
+.header {
+  background-color: var(--clr-primary-2);
+  color: var(--clr-accent-primary);
   font-size: 25px;
+  font-weight: 500;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* List items */
 .price li {
-  border-bottom: 1px solid var(--clr-accent-primary);
   padding: 20px;
   text-align: center;
+  
 }
 
 /* Grey list item */
 .price .grey {
-  background-color: #eee;
+  background-color: var(--clr-primary-2);
+  color: var(--clr-accent-primary);
   font-size: 20px;
+  font-weight: 400;
 }
 
 /* The "Sign Up" button */
 .button {
-  background-color: #04aa6d;
+  background-color: var(--clr-accent-primary);
   border: none;
-  color: white;
+  color: var(--clr-primary-2);
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
+}
+
+.button:hover {
+  background-color: var(--clr-accent-secondary);
 }
 
 .note {
@@ -769,6 +812,16 @@ section {
 
 /* Features Styling */
 
+.features-heading {
+  color: var(--clr-primary-2);
+  padding-bottom: 30px;
+}
+
+.features-sub-heading {
+  color: var(--clr-primary-2);
+  padding-bottom: 30px;
+}
+
 .product-features {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -779,7 +832,6 @@ section {
 
 .title,
 .features-wrapper {
-  background-color: #9dc08b;
   border-radius: 10px;
   padding: 10px;
 }
@@ -842,7 +894,7 @@ h4 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: var(--clr-primary-2);
   color: var(--clr-accent-primary);
   border-radius: 5px;
 }

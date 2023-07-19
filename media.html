@@ -35,14 +35,16 @@
 
 <body>
   <div id="app-2">
-    <button class="tablink" onclick="openPage('Home', this, 'white')" id="defaultOpen">Design</button>
-    <button class="tablink" onclick="openPage('features', this, 'white')" id="defaultOpen">Features</button>
+    <button class="tablink" onclick="openPage('Home', this, 'white')" id="defaultOpen">Web Dev</button>
+    <button class="tablink" onclick="openPage('features', this, 'white')">Services</button>
     <button class="tablink" onclick="openPage('products', this, 'white')">Products</button>
     <button class="tablink" onclick="openPage('subscriptions', this, 'white')">Pricing</button>
 
     <div id="Home" class="tabcontent">
 
-           <section id="product">
+      <!-- Product Item Section -->
+      <main>
+        <section id="product">
           <div class="product-wrapper">
 
       <!-- Item Placard -->
@@ -101,18 +103,13 @@
 
       <div class="product-features">
 
-        <!-- Title Section -->
-        <!-- <div class="title">
-          <img src="images/icons/coding.png" alt="">
-          <h2>Web Dev Features</h2>
-          <p>
-            In addition to website design, we offer a range of complementary services to elevate your online presence:
-          </p>
-          <button>Buy Now</button>
-        </div> -->
 
         <!-- card section -->
-        <div class="features-wrapper shrink">
+        <div class="features-wrapper nudge">
+
+          <h2 class="features-heading">Bwanji Media Services</h2>
+          <h5 class="features-sub-heading">Transformative media services that captivate, inspire, and leave lasting impressions.</h5>
+
           <div class="row">
             <!-- card 1 -->
             <div class="column">
@@ -193,23 +190,28 @@
               </div>
             </div>
           </div>
-
-        </div>
-      </div>
+       </div>
       </div>
     </div>
 
     <!-- Products Cards Section -->
     <div id="products" class="tabcontent ">
+
+      <h2 class="product-heading">Bwanji Media Products</h2>
+      <h5 class="product-sub-heading">"Find the perfect media product for your needs"</h5>
+      
       <div class="products-wrapper">
 
         <div class="product-cards">
+
+          <!-- Web Design Product Card -->
+
           <div class="item__card">
             <img src="images/web-design.jpg" alt="">
-            <h3>Website Design</h3>
+            <h3>Media Strategy</h3>
             <p>Create an impressive online presence with our professional website design service. we can help you build a site that reflects your brand and attracts your customers.</p>
-            <p class="item__price">Key Features</p>
-            <ul>
+            <p class="item__price">Features</p>
+            <ul class="item__list">
               <li>Modern and Sleek Design</li>
               <li>Mobile-Friendly</li>
               <li>User-Focused Navigation</li>
@@ -218,36 +220,40 @@
               <li>Quick Loading Times</li>
               <li>Scalable and Flexible</li>
             </ul>
-            <p><button>Add to Cart</button></p>
+            <a href="" class="button">Add To Cart</a>
           </div>
 
+           <!-- Web Hosting Product Card -->
 
           <div class="item__card">
             <img src="images/Web Hosting.jpg" alt="">
-            <h3>Web Hosting</h3>
+            <h3>Media Relations</h3>
             <p>Launch your online presence with our dependable web hosting services. We provide fast, secure, and scalable solutions that ensure your website is always up and running smoothly.</p>
-            <p class="item__price">Key Features</p>
-            <ul>
+            <p class="item__price">Features</p>
+            <ul class="item__list">
               <li>Cost-Effective Hosting</li>
-              <li>Lightning-Fast Speed</li>
               <li>Enhanced Security</li>
               <li>Seamless Scalability</li>
               <li>Developer-Friendly Workflow</li>
               <li>Quick Loading Times</li>
               <li>Scalable and Flexible</li>
               <li>Fast and secure hosting with 24/7 support</li>
-              <li>continuous delivery vs continuous deployment</li>
             </ul>
-            <p><button>Add to Cart</button></p>
+            <a href="" class="button">Add To Cart</a>
           </div>
 
-
+           <!-- Web Maintenance Product Card -->
+           
           <div class="item__card">
             <img src="images/Website Maintenance.jpg" alt="">
-            <h3>Website Maintenance</h3>
-            <p>Keep your website running smoothly and up to date with our comprehensive website maintenance services. Our team of experts will handle all the technical aspects, allowing you to focus on your core business.</p>
-            <p class="item__price">Key Features</p>
-            <ul>
+            <h3>Press Release Writing and Distribution
+            </h3>
+
+            <p>Our team of experts will handle all the technical aspects, allowing you to focus on your core business.</p>
+
+            <p class="item__price">Features</p>
+         
+            <ul class="item__list">
               <li>Regular Updates</li>
               <li>Security Monitoring</li>
               <li>Backup and Restoration</li>
@@ -256,9 +262,31 @@
               <li>Bug Fixes</li>
               <li>Technical Support</li>
             </ul>
-            <p><button>Add to Cart</button></p>
+            <a href="" class="button">Add To Cart</a>
           </div>
 
+
+                  <!-- Web Maintenance Product Card -->
+           
+                  <div class="item__card">
+                    <img src="images/Website Maintenance.jpg" alt="">
+                    <h3>Video Production</h3>
+        
+                    <p>Our team of experts will handle all the technical aspects, allowing you to focus on your core business.</p>
+        
+                    <p class="item__price">Features</p>
+                 
+                    <ul class="item__list">
+                      <li>Regular Updates</li>
+                      <li>Security Monitoring</li>
+                      <li>Backup and Restoration</li>
+                      <li>Content Management</li>
+                      <li>Performance Optimization</li>
+                      <li>Bug Fixes</li>
+                      <li>Technical Support</li>
+                    </ul>
+                    <a href="" class="button">Add To Cart</a>
+                  </div>
           
         </div>
       </div>
@@ -267,12 +295,15 @@
 
     <!-- Subscriptions Tab -->
     <div id="subscriptions" class="tabcontent">
+      <h2 class="price-heading">Bwanji Web Design Pricing</h2>
+      <h5 class="price-sub-heading">Plan for your project with customizable options. Our plans scale with you based on your needs.</h5>
       <div class="subscriptions-wrapper">
 
         <div class="columns">
           <ul class="price">
             <li class="header">Bronze Web Design Package</li>
-            <li class="grey">From $100 / year</li>
+            <li class="grey">From $250</li>
+            <li class="grey"><a href="#" class="button">Get Started Up</a></li>
             <li>Cost-effective solution for small businesses or individuals starting their online presence.</li>
             <li>Customized design</li>
             <li>Responsive layout</li>
@@ -280,8 +311,8 @@
             <li>Contact form integration</li>
             <li>Basic SEO optimization</li>
             <li>5 pages: Design and development of up to 5 web pages.</li>
-            <li>Stock imagery: Incorporation of high-quality stock photos to enhance visual appeal.</li>
-            <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            <li>Stock imagery</li>
+           
           </ul>
         </div>
 
@@ -289,7 +320,8 @@
         <div class="columns">
           <ul class="price">
             <li class="header">Silver Web Design Package</li>
-            <li class="grey">From $100 / year</li>
+            <li class="grey">From $350</li>
+            <li class="grey"><a href="#" class="button">Sign Up</a></li>
             <li>Ideal for small to medium-sized businesses seeking a more comprehensive online presence.</li>
             <li>All features from the Bronze package, plus:</li>
             <li>Expanded website scope: Design and development of up to 10 web pages.</li>
@@ -298,14 +330,15 @@
             <li>Social media integration</li>
             <li>Customizable forms</li>
             <li>Blog setup</li>
-            <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            
           </ul>
         </div>
 
         <div class="columns">
           <ul class="price">
             <li class="header">Gold Web Design Package</li>
-            <li class="grey">From $100 / year</li>
+            <li class="grey">From $450</li>
+            <li class="grey"><a href="#" class="button">Sign Up</a></li>
             <li>Perfect for businesses requiring a robust and fully customized online presence.</li>
             <li>All features from the Bronze and Silver packages, plus:</li>
             <li>Unlimited web pages</li>
@@ -314,15 +347,9 @@
             <li>Advanced SEO optimization</li>
             <li>Custom design elements</li>
             <li>Content management system (CMS): Implementation of a user-friendly CMS for easy content updates.</li>
-            <li class="grey"><a href="#" class="button">Sign Up</a></li>
           </ul>
         </div>
-       
-
       </div>
-
-
-      <p class="note">Note: The specific features and inclusions can be further customized based on your requirements and budget.</p>
 
     </div>
 
@@ -336,7 +363,7 @@
         </a>
         <a href="coding.html">
           <i class="fi fi-rr-display-code"></i>
-          <h4>Coding</h4>
+          <h4>Web Dev</h4>
         </a>
         <a href="design.html">
           <i class="fi fi-rr-pencil-paintbrush"></i>
@@ -361,6 +388,7 @@
       </div>
     </footer>
     <script src="main.js"></script>
+    </div>
 </body>
 
 </html>
