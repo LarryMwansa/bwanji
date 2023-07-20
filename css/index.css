@@ -217,6 +217,8 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-bottom: solid 1px var(--clr-accent-secondary);
+  
 }
 
 .upper-bar a {
@@ -267,6 +269,7 @@ p {
   align-items: center;
   text-align: center;
   padding-top: 10px;
+  border-top: solid 1px var(--clr-accent-secondary);
 }
 
 .menu a {

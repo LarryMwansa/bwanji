@@ -216,7 +216,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-bottom: solid 2px var(--clr-accent-secondary);
+  border-bottom: solid 1px var(--clr-accent-secondary);
 }
 
 .upper-bar a {
@@ -227,7 +227,6 @@ p {
 .upper-bar a:hover {
   padding: 13px;
   background-color: #4e6e81;
-  border-bottom: solid 2px #f9dbbb;
   color: #f9dbbb;
 }
 
@@ -271,6 +270,7 @@ p {
   background-color: var(--clr-primary-2);
   position: fixed;
   bottom: 0;
+  border-top: solid 1px var(--clr-accent-secondary);
 }
 
 .menu a {
@@ -395,6 +395,7 @@ section {
   padding: 10px 16px;
   font-size: 15px;
   width: 25%;
+  border-bottom: solid 1px var(--clr-accent-secondary);
 }
 
 .tablink:hover {
