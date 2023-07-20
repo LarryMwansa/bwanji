@@ -149,10 +149,10 @@ a:hover {
   background-color: var(--clr-accent-primary);
   color: var(--clr-primary-2);
   cursor: pointer;
-  transition: border-color 0.25s;
 }
-.button a:hover {
-  border-color: var(--clr-accent-secondary);
+
+.button:hover {
+  background-color: var(--clr-accent-secondary);
 }
 .button:focus,
 .button:focus-visible {
