@@ -565,9 +565,9 @@ section {
 /* List items */
 .price li {
   padding: 20px;
-  text-align: center;
-  
+  text-align: center; 
 }
+
 
 /* Grey list item */
 .price .grey {
