@@ -298,19 +298,15 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
-  .menu {
-    position: fixed;
-    bottom: 0;
-  }
-
   .menu a {
     color: #4e6e81;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     text-align: center;
   }
 
   .menu h4 {
-    font-size: 14px;
+    font-size: 100%;
   }
 
   .bottom-header img {
@@ -324,7 +320,6 @@ p {
     border-bottom: solid 2px #4e6e81;
   }
 }
-
 /* Body Stytling Setting */
 
 #app,
@@ -396,6 +391,13 @@ section {
   font-size: 15px;
   width: 25%;
   border-bottom: solid 1px var(--clr-accent-secondary);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .tablink {
+    font-size: 12px;
+  }
 }
 
 .tablink:hover {
@@ -992,8 +994,5 @@ h4 {
 
   }
 
-
-
-}
 
 
