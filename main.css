@@ -817,100 +817,59 @@ section {
 
 .features-heading {
   color: var(--clr-primary-2);
-  padding-bottom: 30px;
+  margin: 10px;
 }
 
 .features-sub-heading {
   color: var(--clr-primary-2);
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
-
-
-
-.product-features {
+.features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: minmax(100px, auto);
-  gap: 15px;
-  /* margin: 10px; */
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  margin: 0px 50px 0px 50px;
+  padding: 30px;
 }
 
-.title,
-.features-wrapper {
-  border-radius: 10px;
-  padding: 10px;
-}
 
-.title {
-  grid-column: 7 / 12;
-  grid-row: 1 / 8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+.features-card {
+  flex: 1;
+  padding: 50px;
   text-align: center;
+  background-color: var(--clr-primary-2);
+  color: var(--clr-accent-primary);
+  border-radius: 5px;
 }
 
-.features-wrapper {
-  grid-column: 1 / 12;
-  grid-row: 1 / 8;
-  padding-top: 100px;
-  margin: 10px;
-}
-
-.menu-title {
-  grid-column: 1 / 12;
-  grid-row: 1 / 8;
-  padding-top: 100px;
-}
-
-.shrink {
-  padding-top: 145px;
-}
-
-.title img {
-  width: 200px;
-}
-
-.title h2,
-h4 {
-  margin-bottom: 20px;
+.feature-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
 }
 
 
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width: 1000px) {
-  .menu-item {
-    display: none;
-  }
+.features-heading {
+  color: var(--clr-primary-2);
+  font-size: 30px;
+  padding-bottom: 10px;
+}
 
-  .features-wrapper {
-    padding: 20px;
-  }
+.features-sub-heading {
+  color: var(--clr-primary-2);
+  font-size: 16px;
+  margin: 10px 10px 0 10px;
+}
 
-  .product-features {
+  .features-grid {
     display: flex;
     flex-direction: column;
-    margin-top: 0;
-    margin-left: 5px;
-    margin-right: 5px;
+    gap: 10px;
+    margin: 0px 15px 10px 15px;
+    padding: 10px;
   }
-
-  .title img {
-    width: 40%;
-  }
-
-  .title h2 {
-    font-size: 1.6em;
-    line-height: 1.1;
-    text-align: center;
-  }
-
-  .row {
-    display: block;
-  }
+  
 }
 
 
@@ -987,10 +946,6 @@ h4 {
     margin: 0px 15px 60px 15px;
     padding: 10px;
   }    
-
-  }
-
-  .card {
 
   }
 
