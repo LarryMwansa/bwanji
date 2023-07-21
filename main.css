@@ -823,6 +823,9 @@ section {
   padding-bottom: 30px;
 }
 
+
+
+
 .product-features {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -861,10 +864,6 @@ section {
   padding-top: 100px;
 }
 
-.nudge {
-  /* padding-top: 170px; */
-}
-
 .shrink {
   padding-top: 145px;
 }
@@ -878,52 +877,7 @@ h4 {
   margin-bottom: 20px;
 }
 
-.row {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
 
-/* Float four columns side by side */
-.column {
-  width: 25%;
-  padding: 0 10px;
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: var(--clr-primary-2);
-  color: var(--clr-accent-primary);
-  border-radius: 5px;
-}
-
-.card img {
-  width: 200px;
-  height: auto;
-  margin: auto;
-  padding-bottom: 10px;
-}
-
-.menu-wrapper {
-  margin: 10px;
-}
-
-.more-menu {
-  margin-top: 20px;
-  padding-bottom: 70px;
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
 
 @media screen and (max-width: 1000px) {
   .menu-item {
@@ -956,3 +910,90 @@ h4 {
     display: block;
   }
 }
+
+
+/* More Menu Stuff */
+
+.menu-heading {
+  color: var(--clr-primary-2);
+  margin: 30px;
+  
+}
+
+.menu-sub-heading {
+  color: var(--clr-primary-2);
+
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  margin: 15px;
+  padding: 30px;
+}
+
+
+.card {
+  flex: 1;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--clr-primary-2);
+  color: var(--clr-accent-primary);
+  border-radius: 5px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  */
+
+}
+
+.card img {
+  width: 200px;
+  height: auto;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.card a:hover {
+  color: var(--clr-accent-secondary);
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 1000px) {
+
+  .menu-heading,.menu-sub-heading {
+    margin: 30px;
+  }
+
+  .menu-heading {
+    font-size: 30px;
+  }
+  
+  .menu-sub-heading {
+    font-size: 18px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 15px 60px 15px;
+    padding: 10px;
+  }    
+
+  }
+
+  .card {
+
+  }
+
+
+
+}
+
+
