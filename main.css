@@ -82,15 +82,20 @@ GENERAL STYLES
 --------------------- */
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Press Start 2P", cursive;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  
+
+    /* Color Scheme */
 
   color-scheme: light dark;
   color: #4e6e81;
   background-color: #375f4b;
 
-  /* Color Scheme */
+
 
   --clr-primary-1: #375f4b;
   --clr-primary-2: #9dc08b;
@@ -985,5 +990,18 @@ section {
 
   }
 
+  
+/* //////////////////////////
+
+Blog Page
+
+///////////////////////// */
 
 
+.header {
+  padding: 60px;
+  text-align: center;
+  background: var(--clr-primary-1);
+  color: white;
+  font-size: 30px;
+}
