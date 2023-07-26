@@ -38,57 +38,207 @@
 </head>
 
 <body>
-
-  <div class="header">
-    <h1>Bwanji Blog</h1>
-    <p>A <b>responsive</b> website created by me.</p>
-  </div>
-
-  <div class="navbar">
-    <a href="#" class="active">Home</a>
-    <a href="#">Web Development</a>
-    <a href="#">Link</a>
-    <a href="#" class="right">Back</a>
-  </div>
-
-  <div class="row">
-    <div class="side">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>More Text</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div>
+  <!-- major header goes here -->
+  <header id="header">
+    <div class="header">
+      <h2>Bwanji Digital Resource Center</h2>
+      <p>Here You Find All the Information To Get Your Started</p>
     </div>
-    <div class="main">
 
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-      </p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-      </p>
+    <!-- navbar goes here -->
+    <div id="navbar">
+      <div class="nav-box">
+        <a class="active" href="index.html">Home</a>
+        <a href="javascript:void(0)">Blog</a>
+        <a href="javascript:void(0)">Hub</a>
+        <a href="javascript:void(0)">Community</a>
+      </div>
     </div>
+  </header>
+
+  <!-- main section starts here -->
+  <div class="content">
+
+    <main>
+
+      <!-- Hero Starts Here -->
+
+      <section class="container">
+
+        <div class="hero-columns">
+
+          <!-- Hero Text Box -->
+
+          <div class="hero-text">
+            <h1>Unlock Your Potential: Explore our Resource Page for Knowledge, Tips, and Inspiration!
+            </h1>
+            <p>Your One-Stop Destination for Expert Resources and Insights. Discover a Wealth of Resources to Fuel Your
+              Success and Growth</p>
+            <a href="#" class="button">Read More</a>
+          </div>
+
+          <!-- Hero Image Box -->
+
+          <div class="hero-image">
+
+            <div class="image">
+              <img src="images/hero/hero-abstract.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- featured articles go here -->
+
+      <section id="featured-articles-section">
+        <div class="featured-articles">
+          <!-- Main Featured Article -->
+          <div class="main-feature">
+            <ul class="articles-list">
+              <li>
+                <article class="snippet">
+                  <img src="/images/dummy_450x150.jpg" alt="Photo by Pixabay" class="snippet__image">
+                  <h3 class="snippet__title"><a href="">10 Things The Make A Good Website</a></h3>
+                  <p class="snippet__meta">by <span>Bwanji Digital Staffer</span> on <span>Jul 22, 2023</span></p>
+                  <p class="snippet__body">In this article, we will explore the key elements that contribute to making a
+                    good website.</p>
+                  <!-- <a href="/blog/2023-07-22-10-things-the-make-a-good-website/" class="button snippet-btn">Continue
+                    Reading</a> -->
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Featured Articles -->
+          <div class="featured-stories">
+            <ul class="articles-list">
+              <li>
+                <article class="snippet featured-stories__container">
+                  <div class="featured-articles_image">
+                    <img src="images/dummy_120x80.jpg" alt="">
+                  </div>
+                  <div>
+                    <h4 class="featured-stories_title"><a href="">10 Things The Make A Good Website</a></h4>
+                    <p class="featured-stories__meta">by <span>Bwanji Digital Staffer</span><br> on <span>Jul 22,
+                        2023</span></p>
+                  </div>
+                </article>
+
+              </li>
+              <li>
+                <article class="snippet featured-stories__container">
+                  <div class="featured-articles_image">
+                    <img src="images/dummy_120x80.jpg" alt="">
+                  </div>
+                  <div>
+                    <h4 class="featured-stories_title"><a href="">10 Things The Make A Good Website</a></h4>
+                    <p class="featured-stories__meta">by <span>Bwanji Digital Staffer</span><br> on <span>Jul 22,
+                        2023</span></p>
+                  </div>
+                </article>
+
+              </li>
+              <li>
+                <article class="snippet featured-stories__container">
+                  <div class="featured-articles_image">
+                    <img src="images/dummy_120x80.jpg" alt="">
+                  </div>
+                  <div>
+                    <h4 class="featured-stories_title"><a href="">10 Things The Make A Good Website</a></h4>
+                    <p class="featured-stories__meta">by <span>Bwanji Digital Staffer</span><br> on <span>Jul 22,
+                        2023</span></p>
+                  </div>
+                </article>
+
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- All Stories Section -->
+
+      <section id="all-stories-section">
+
+          <!-- all stories list -->
+
+        <div class="all-stories__container">
+
+          <div class="all-stories">
+
+            <h5 class="section-title text-center ">All Stories</h5>
+            <ul class="articles-list">
+              <li>
+                <article class="snippet featured-stories__container">
+                  <div>
+                    <h4 class="featured-stories_title"><a href="">10 Things The Make A Good Website</a></h4>
+                    <p class="featured-stories__meta">by <span>Bwanji Digital Staffer</span><br> on <span>Jul 22,
+                        2023</span></p>
+                  </div>
+                  <div class="featured-articles_image">
+                    <img src="images/dummy_175x120.jpg" alt="">
+                  </div>
+                </article>
+
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- popular stories list -->
+
+          <div class="popular-stories">
+            <h5 class="font-weight-bold spanborder"><span>Popular</span></h5>
+            <ol class="list-featured">
+              <li><span>
+                  <h6 class="font-weight-bold"><a href="pages/article.php" class="text-dark">Did Supernovae Kill Off Large Ocean Animals?</a></h6>
+                  <p class="text-muted">Jake Bittle in SCIENCE</p>
+                </span>
+              </li>
+
+            </ol>
+          </div>
+
+        </div>
+
+      </section>
+
+      
+    </main>
+    <footer>
+      <p>Footer</p>
+    </footer>
+
   </div>
 
-  <div class="footer">
-    <h2>Footer</h2>
-  </div>
+  <!-- footer goes here -->
 
-  <script src="main.js"></script>
-  </div>
+  <footer>
+    <p>© 2020 Company Name. All rights reserved.</p>
+  </footer>
+
+  <!-- javascript goes here -->
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
 </body>
 
 </html>
