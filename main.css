@@ -909,6 +909,10 @@ section {
     margin: 10px 10px 0 10px;
   }
 
+  .header {
+    line-height: 1.5em;
+  }
+
 
 }
 
