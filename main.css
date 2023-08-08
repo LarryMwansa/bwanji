@@ -935,7 +935,7 @@ More Menu Page
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 15px;
-  margin: 15px;
+  margin: 60px 30px 15px 300px;
   padding: 30px;
 }
 
