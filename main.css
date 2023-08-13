@@ -88,8 +88,10 @@ GENERAL STYLES
   line-height: 1.5;
   font-weight: 300;
   
-
-    /* Color Scheme */
+/* 
+ -----------------------------
+    Color Scheme
+------------------------------     */
 
   color-scheme: light dark;
   color: #4e6e81;
@@ -116,7 +118,20 @@ GENERAL STYLES
   --fw-number: 800;
 }
 
-/* Links Style Section */
+
+/* -----------------------
+Body Settings
+----------------------- */
+
+.body-width {
+  max-width: 120ch;
+  margin: 0 auto;
+}
+
+
+/* ---------------------
+Links Style Section 
+--------------------- */
 
 a {
   font-weight: 500;
@@ -159,7 +174,9 @@ a:hover {
   }
 }
 
-/* Logo Styling  */
+/* ---------------
+Logo Styling 
+---------------- */
 
 .logo {
   height: 6em;
@@ -174,7 +191,10 @@ a:hover {
   filter: drop-shadow(0 0 2em #f7df1eaa);
 }
 
-/* Headings */
+
+/* -----------------
+Headings
+----------------- */
 
 h1 {
   font-size: 3.2em;
@@ -211,11 +231,56 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-/*
 
-/* ---Header - icon--- bar */
 
-/* Upper Bar */
+/* ------------------
+Nav Setting
+------------------ */
+
+
+/* Major Header
+-------------------- */
+
+.header {
+  background-color: var(--clr-primary-1);
+  color: var(--clr-primary-2);
+  padding: 80px;
+  text-align: center;
+}
+
+
+/* Desktop Mode NavBar
+-------------------- */
+
+.nav  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo img {
+  width: 70px;
+  height: auto;
+}
+
+.nav-list a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.nav-list a:hover {
+  color: var(--clr-accent-secondary);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    display: none;
+  }
+}
+
+/* Mobile Mode Upper NavBar 
+------------------------*/
 
 .upper-bar {
   display: flex;
@@ -263,7 +328,14 @@ p {
   }
 }
 
-/* Bottom Bar  */
+@media screen and (min-width:1200px) {
+  .upper-bar {
+    display: none;
+  }
+}
+
+/* Mobile Mode Bottom Bar  
+----------------------------*/
 
 .menu {
   display: flex;
@@ -278,6 +350,13 @@ p {
   border-top: solid 1px var(--clr-accent-secondary);
 }
 
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu a {
   color: #4e6e81;
   text-align: center;
@@ -290,13 +369,6 @@ p {
   padding: 0;
   margin: 0;
 }
-
-/* .bottom-header img {
-  width: 12%;
-  height: auto;
-  margin: auto;
-  padding: 0;
-} */
 
 .active {
   border-bottom: solid 3px #3d484e;
@@ -325,6 +397,7 @@ p {
     border-bottom: solid 2px #4e6e81;
   }
 }
+
 /* Body Stytling Setting */
 
 #app,
@@ -945,6 +1018,14 @@ More Menu Page
   padding: 30px;
 }
 
+
+.community-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  margin: 60px 30px 15px 60px;
+  padding: 30px;
+}
 
 .card {
   flex: 1;
